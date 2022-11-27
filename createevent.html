@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/createevent.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Party Radar - Create Event</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">PR</a>
+      <ul>
+        <li tabindex="1"><a href="./index.html" >Hem</a></li>
+        <li tabindex="2"><a href="./allevents.html">Alla Events</a></li>
+        <li tabindex="3"><a href="./createevent.html">Skapa Event</a></li>
+        <li tabindex="4"><a href="./aboutus.html">Om oss</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+      <h1>Skapa nytt event</h1>
+      <form>
+        <label for="event-name">Namn:</label><input id="event-name" type="text">
+        <label for="event-city">Stad:</label><input id="event-city" type="text">
+        <label for="event-description">Kort Beskrivning:</label> <textarea id="event-description" rows="3"></textarea>
+        <label for="event-agenda">Taggar:</label><input id="event-agenda" type="text">
+        <label for="event-date">Datum:</label><input id="event-date" type="date">
+        <label for="event-category">Kategori:</label>
+          <select name="event-category" id="event-category">
+            <option value="music">Musik</option>
+            <option value="entertainment">Nöje</option>
+            <option value="theater">Teater</option>
+          </select>
+        <label for="event-images" style="margin-top: 10px;">Bilder: (Upp till fyra stycken)</label>
+          <input id="event-images" type="file" multiple>
+        <button class="create-event-btn">Skapa Event</button>
+      </form>
+  </main>
+</body>
+</html>

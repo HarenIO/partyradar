@@ -1,0 +1,43 @@
+#info-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+#info-card h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+#info-card p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+#info-card summary {
+  font-size: 1.2rem;
+  display: block;
+  margin: 0.5rem 0;
+}
+#info-card summary :hover {
+  cursor: pointer;
+}
+#info-card a {
+  margin: 0.5rem 0;
+  text-decoration: underline;
+  color: black;
+  font-size: 2rem;
+}
+#info-card .event-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+#info-card .event-images img {
+  max-width: 100%;
+  width: 200px;
+}
+#info-card .event-images img:hover {
+  transform: scale(110%);
+}
+
+/*# sourceMappingURL=eventdetails.css.map */

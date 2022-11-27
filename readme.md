@@ -1,0 +1,1 @@
+Use own google api key to enable search function

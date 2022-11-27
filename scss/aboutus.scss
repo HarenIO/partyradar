@@ -1,0 +1,143 @@
+main {
+
+  & .about-us {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    & p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    & .vd-info {
+      display: flex;
+      gap: 1rem;
+
+      & img {
+        width: 200px;
+      }
+
+      & p, a {
+        color: black;
+        margin-bottom: 0;
+        display: block;
+        font-size: 1.5rem;
+      }
+    }
+
+    & h1 {
+      font-size: 4rem;
+      text-decoration: underline;
+      margin-bottom: 2rem;
+    }
+
+    & h2 {
+      margin-top: 2rem;
+    }
+
+    & .contact-area {
+      font-size: 1.5rem;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+
+      & iframe {
+        width: 500px;
+        margin: 0 auto;
+      }
+
+      & form {
+        margin: 0 auto;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        & .contact-name {
+          margin: 0.5rem 0;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          & input {
+            width: 240px;
+            outline: none;
+            padding: 4px;
+          }
+        }
+
+        & .contact-mail {
+          margin: 0.5rem 0;
+          display: flex;
+          justify-content: space-between;
+
+          & input {
+            width: 240px;
+            outline: none;
+            padding: 4px;
+          }
+        }
+
+        & .contact-message {
+          margin: 0.5rem 0;
+          display: flex;
+          justify-content: space-between;
+
+          & textarea {
+            width: 240px;
+            outline: none;
+            padding: 4px;
+            resize: none;
+          }
+        }
+
+        & .contact-btn {
+          display: flex;
+          justify-content: flex-end;
+
+          & button {
+            font-size: 1.5rem;
+            font-family: 'Dosis', sans-serif;
+            width: 240px;
+            align-self: center;
+            border: 1px solid grey;
+            padding: 4px 8px;
+
+            &:hover{
+              cursor: pointer;
+            }
+          }
+        }
+
+      }
+
+      & .team-img {
+        max-width: 100%;
+
+      }
+
+    }
+    & .modal2{
+      text-align: center;
+      height: 280px;
+
+      & .close-button{
+        position: relative;
+        font-family: 'Dosis', sans-serif;
+        font-size: 1.2rem;
+        width: 100px;
+        padding: 0.5rem 1rem;
+        background: rgba(230, 230, 230, 0.692);
+        border: 1px solid grey;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+}

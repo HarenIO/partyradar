@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=APIKEYHERE&libraries=places"></script> -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Party Radar - Home</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">PR</a>
+      <ul>
+        <li tabindex="1"><a href="./index.html" >Hem</a></li>
+        <li tabindex="2"><a href="./allevents.html">Alla Events</a></li>
+        <li tabindex="3"><a href="./createevent.html">Skapa Event</a></li>
+        <li tabindex="4"><a href="./aboutus.html">Om oss</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="search">
+      <h1>Party Radar</h1>
+      <h2>Hitta musik events nära dig</h2>
+      <input id="autocomplete_search" tabindex="5" name="autocomplete_search" type="text" class="form-control" placeholder="Sök på stad..">
+
+    </section>
+    <h2>Events i Stockholm</h2>
+    <section class="event-showcase">
+    
+        <div class="event event-1">
+          <img class="image-1" src="" alt="image of artist">
+          <p class="name-1">Namn</p>
+          <p class="date-1">Datum</p>
+          <p class="venue-1">Plats</p>
+          <p class="open-1 more-info open-button">Mer info</p>
+        </div>
+        <div class="event event-2">
+          <img class="image-2" src="" alt="image of artist">
+          <p class="name-2">Namn</p>
+          <p class="date-2">Datum</p>
+          <p class="venue-2">Plats</p>
+          <p class="open-2 more-info open-button">Mer info</p>
+        </div>
+        <div class="event event-3">
+          <img class="image-3" src="" alt="image of artist">
+          <p class="name-3">Namn</p>
+          <p class="date-3">Datum</p>
+          <p class="venue-3">Plats</p>
+          <p class="open-3 more-info open-button">Mer info</p>
+        </div>
+        <div class="event event-4">
+          <img class="image-4" src="" alt="image of artist">
+          <p class="name-4">Namn</p>
+          <p class="date-4">Datum</p>
+          <p class="venue-4">Plats</p>
+          <p class="open-4 more-info open-button">Mer info</p>
+        </div>
+        <div class="event event-5">
+          <img class="image-5" src="" alt="image of artist">
+          <p class="name-5">Namn</p>
+          <p class="date-5">Datum</p>
+          <p class="venue-5">Plats</p>
+          <p class="open-5 more-info open-button">Mer info</p>
+        </div>
+        <div class="event event-6">
+          <img class="image-6" src="" alt="image of artist">
+          <p class="name-6">Namn</p>
+          <p class="date-6">Datum</p>
+          <p class="venue-6">Plats</p>
+          <p class="open-6 more-info open-button">Mer info</p>
+        </div>
+    </section>
+    <dialog class="modal" id="modal">
+      <button class="close-button">Stäng</button>
+      <h2 class="modal-name">Namn</h2>
+      <p class="modal-date">Datum</p>
+      <p class="modal-genre">Genre</p>
+      <p class="modal-category">Kategori:</p>
+      <p class="modal-prices">Biljett Priser:</p>
+      <p class="modal-address">Adress</p>
+      <a class="modal-tickets" href="" target="_blank">Köp biljetter här</a>
+    </dialog>
+  </main>
+  
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

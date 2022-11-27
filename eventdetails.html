@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/eventdetails.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Party Radar - Event Details</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">PR</a>
+      <ul>
+        <li tabindex="1"><a href="./index.html" >Hem</a></li>
+        <li tabindex="2"><a href="./allevents.html">Alla Events</a></li>
+        <li tabindex="3"><a href="./createevent.html">Skapa Event</a></li>
+        <li tabindex="4"><a href="./aboutus.html">Om oss</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="info-card">
+      <h1 class="event-name">Namn</h1>
+      <p class="event-date">Datum: </p>
+      <p class="event-venue">Plats: </p>
+      <p class="event-genre">Genre:</p>
+      <p class="event-cost">Biljett pris:</p>
+      <details>
+        <summary id="expandable"><b>Beskrivning <span class="expand-arrow">&#8628</span></b></summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae possimus sequi quos nemo tenetur dignissimos cum natus aperiam consectetur, perferendis rem esse a est magnam quibusdam quo provident earum adipisci? lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi aliquid quibusdam cum voluptatibus, provident quas vel necessitatibus nulla ratione at debitis quos mollitia rem consectetur eaque, officia accusamus nam totam!</p>
+      </details>
+      <a class="event-link" href="" target="_blank">Köp biljetter här</a>
+      <h2 class="image-header">Bilder</h2>
+      <div class="event-images">
+        <img class="img-1" src="" alt="image of artist">
+        <img class="img-2" src="" alt="image of artist">
+        <img class="img-3" src="" alt="image of artist">
+        <img class="img-4" src="" alt="image of artist">
+      </div>
+    </section>
+  </main>
+  <script src="./scripts/eventdetails.js"></script>
+</body>
+</html>

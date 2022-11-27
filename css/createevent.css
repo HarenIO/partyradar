@@ -1,0 +1,45 @@
+main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  display: inline-block;
+  font-size: 3rem;
+  border-bottom: 1px solid black;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  width: 600px;
+}
+main form #event-images {
+  font-family: "Dosis", sans-serif;
+}
+main form select, main form option {
+  font-size: 1.2rem;
+  font-family: "Dosis", sans-serif;
+}
+main form label {
+  font-size: 1.2rem;
+}
+main form input, main form textarea {
+  resize: none;
+  font-size: 1.2rem;
+  outline: none;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+main form button {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.2rem;
+  width: 120px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=createevent.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/aboutus.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Party Radar - About us</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="./index.html">PR</a>
+      <ul>
+        <li tabindex="1"><a href="./index.html" >Hem</a></li>
+        <li tabindex="2"><a href="./allevents.html">Alla Events</a></li>
+        <li tabindex="3"><a href="./createevent.html">Skapa Event</a></li>
+        <li tabindex="4"><a href="./aboutus.html">Om oss</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="about-us">
+
+        <h2>Företaget</h2>
+        <p>Våran vision är Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore atque esse doloribus iste quaerat ad vitae eligendi neque. Minus sapiente libero necessitatibus consequatur voluptatem tempore qui nihil saepe, error ipsa Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente non assumenda consequuntur provident corporis ea minus. Iure eveniet illum ullam id animi doloremque laboriosam quos! Porro recusandae alias commodi nulla?.</p>
+        
+        <h2>Vår grundare</h2>
+        <p>Redan som barn Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ullam facere nemo, reiciendis eos asperiores sed possimus itaque at harum a excepturi error quis deleniti, natus rem corporis omnis odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore dolores obcaecati, ratione perferendis consectetur tempora, vero odio, voluptas autem nemo fugiat quod dolorum cumque. Placeat, ratione delectus. Quaerat, laboriosam adipisci?</p>
+        <div class="vd-info">
+          <img src="./images/vd.png" alt="picture of lorem ipsum">
+          <div>
+            <p>Lorem Ipsum</p>
+            <a href="tel:123-456-7890">123-456-7890</a>
+            <a href="mailto:lorem@partyradar.com">lorem@partyradar.com</a>
+          </div>
+        </div>
+        <h2>Teamet</h2>
+        <p>Vi tror starkt på Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti quo dolorem a? Impedit laboriosam magnam culpa error, necessitatibus vel officiis quis accusantium? Officia rerum neque amet qui, eveniet sapiente!</p>
+        <img src="./images/team.jpg" alt="picture of the team" class="team-img">
+        <h2 class="contact-header">Kontakta oss</h2>
+        <div class="contact-area">
+        <form>
+          <div class="contact-name"><label for="name">Namn:</label> <input type="text" id="name"></div>
+          <div class="contact-mail"><label for="mail">Mail:</label> <input type="text" id="mail"></div>
+          <div class="contact-message"><label for="message">Meddelande:</label><textarea id="message" cols="30" rows="10"></textarea></div>
+          <div class="contact-btn"><button id="contact-btn">Skicka</button></div>
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8137.0413541358475!2d18.0233279!3d59.345302!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x82fc0f30ed84f9ed!2sNackademin!5e0!3m2!1ssv!2sse!4v1669213087475!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <dialog class="modal2" id="modal2">
+        <h2 class="modal-name">Tack för ditt meddelande!</h2>
+        <p class="modal-date">Vi återkopplar så fort vi kan.</p>
+        <button class="close-button">Stäng</button>
+      </dialog>
+      <script>
+        const modal = document.querySelector('.modal2')
+        let closeModal = document.querySelector('.close-button');
+        let openModal = document.querySelector('#contact-btn')
+        openModal.addEventListener('click', (e)=> {
+          e.preventDefault()
+          modal.showModal()
+          document.querySelector('form').style.display = "none"
+          document.querySelector('iframe').style.width = "100%"
+          document.querySelector('.contact-header').innerText = "Vårat kontor"
+        })
+        closeModal.addEventListener('click', (e) => {
+          e.preventDefault()
+          modal.close()
+          document.querySelector('#name').value = ""
+          document.querySelector('#mail').value = ""
+          document.querySelector('#message').value = ""
+        })
+      </script>
+    </section>
+  </main>
+</body>
+</html>

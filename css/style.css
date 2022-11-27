@@ -1,0 +1,158 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+}
+body h2 {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav > a {
+  text-decoration: none;
+  color: black;
+  font-size: 3rem;
+  font-weight: 600;
+}
+header nav ul {
+  font-size: 1.5rem;
+  gap: 1.5rem;
+  display: flex;
+  list-style: none;
+}
+header nav ul a {
+  text-decoration: none;
+  color: black;
+}
+header nav ul a:hover {
+  text-decoration: underline;
+}
+
+.pac-container {
+  background: white;
+  margin-left: 5px;
+}
+
+.pac-item:hover {
+  background: rgb(231, 231, 231);
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+main .search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url(../images/header-background.jpg) bottom;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+main .search h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+main .search h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+main .search input {
+  margin-top: 2rem;
+  max-width: 90%;
+  width: 500px;
+  height: 40px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  border: 5px solid white;
+  color: black;
+  background: white;
+  font-weight: 600;
+  opacity: 0.8;
+}
+main .search input::placeholder {
+  color: black;
+  opacity: 1;
+}
+main .event-showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main .event-showcase .event {
+  flex: 1 1 30%;
+}
+main .event-showcase .event .more-info {
+  text-decoration: underline;
+}
+main .event-showcase .event .more-info:hover {
+  cursor: pointer;
+}
+main .event-showcase .event img {
+  width: 100%;
+  height: 200px;
+}
+main .event-showcase .event h4, main .event-showcase .event p {
+  font-size: 1.5rem;
+}
+main .event-showcase .event a {
+  text-decoration: none;
+  color: black;
+}
+main dialog {
+  top: 20%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  gap: 2rem;
+  width: 350px;
+  max-width: 80%;
+}
+main dialog::backdrop {
+  background: linear-gradient(45deg, black, white);
+  opacity: 0.3;
+}
+main dialog h2 {
+  margin-top: 1rem;
+}
+main dialog p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+main dialog button {
+  position: absolute;
+  padding: 0.2rem;
+  top: 5px;
+  right: 5px;
+  width: 50px;
+}
+main dialog a {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: black;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

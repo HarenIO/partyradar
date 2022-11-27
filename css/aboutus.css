@@ -1,0 +1,117 @@
+main .about-us {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+main .about-us p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+main .about-us .vd-info {
+  display: flex;
+  gap: 1rem;
+}
+main .about-us .vd-info img {
+  width: 200px;
+}
+main .about-us .vd-info p, main .about-us .vd-info a {
+  color: black;
+  margin-bottom: 0;
+  display: block;
+  font-size: 1.5rem;
+}
+main .about-us h1 {
+  font-size: 4rem;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+main .about-us h2 {
+  margin-top: 2rem;
+}
+main .about-us .contact-area {
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+main .about-us .contact-area iframe {
+  width: 500px;
+  margin: 0 auto;
+}
+main .about-us .contact-area form {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .about-us .contact-area form .contact-name {
+  margin: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .about-us .contact-area form .contact-name input {
+  width: 240px;
+  outline: none;
+  padding: 4px;
+}
+main .about-us .contact-area form .contact-mail {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .about-us .contact-area form .contact-mail input {
+  width: 240px;
+  outline: none;
+  padding: 4px;
+}
+main .about-us .contact-area form .contact-message {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .about-us .contact-area form .contact-message textarea {
+  width: 240px;
+  outline: none;
+  padding: 4px;
+  resize: none;
+}
+main .about-us .contact-area form .contact-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+main .about-us .contact-area form .contact-btn button {
+  font-size: 1.5rem;
+  font-family: "Dosis", sans-serif;
+  width: 240px;
+  align-self: center;
+  border: 1px solid grey;
+  padding: 4px 8px;
+}
+main .about-us .contact-area form .contact-btn button:hover {
+  cursor: pointer;
+}
+main .about-us .contact-area .team-img {
+  max-width: 100%;
+}
+main .about-us .modal2 {
+  text-align: center;
+  height: 280px;
+}
+main .about-us .modal2 .close-button {
+  position: relative;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.2rem;
+  width: 100px;
+  padding: 0.5rem 1rem;
+  background: rgba(230, 230, 230, 0.692);
+  border: 1px solid grey;
+}
+main .about-us .modal2 .close-button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=aboutus.css.map */

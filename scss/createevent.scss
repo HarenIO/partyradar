@@ -1,0 +1,48 @@
+main{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h1{
+    display: inline-block;
+    font-size: 3rem;
+    border-bottom: 1px solid black;
+    font-weight:300;
+    margin: 2rem 0;
+  }
+  & form{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    width: 600px;
+
+    & #event-images{
+      font-family: 'Dosis', sans-serif;
+    }
+
+    & select, option{
+      font-size: 1.2rem;
+      font-family: 'Dosis', sans-serif;
+    }
+    & label{
+      font-size: 1.2rem;
+    }
+
+    & input, textarea{
+      resize: none;
+      font-size: 1.2rem;
+      outline: none;
+      max-width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    & button{
+      font-family: 'Dosis', sans-serif;
+      font-size: 1.2rem;
+      width: 120px;
+      padding: 10px;
+    }
+  }
+}

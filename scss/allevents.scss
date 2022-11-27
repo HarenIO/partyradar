@@ -1,0 +1,43 @@
+main{
+
+  & h1{
+    font-size: 3rem;
+    text-decoration: underline;
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  & .all-events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    & .event{
+      max-width: 100%;
+      width: 16rem;
+      display: none;
+
+      &:hover{
+        cursor: pointer;
+        transform: scale(110%);
+      }
+
+      & img{
+        width: 100%;
+        height: 150px;
+      }
+
+      & h4, p{
+        font-size: 1.5rem;
+      }
+
+      & .more-info{
+        font-size: 1.7rem;
+        align-self: flex-end;
+        text-decoration: underline;
+        color: black;
+      }
+    }
+  }
+}
